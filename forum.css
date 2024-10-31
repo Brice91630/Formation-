@@ -1,0 +1,134 @@
+/* Couleurs principales */
+:root {
+    --primary-color: #1C1C1E; /* Fond des sections */
+    --secondary-color: #2D3436; /* Couleur secondaire */
+    --accent-color: #0984E3; /* Accent bleu pour les boutons et liens */
+    --background-color: #121212; /* Fond sombre de la page */
+    --text-color: #ECECEC; /* Couleur principale du texte */
+    --light-text: #B2BEC3; /* Texte plus clair pour les sous-titres */
+}
+
+/* Reset des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style général pour le body */
+body {
+    background-color: var(--background-color); /* Fond sombre appliqué à tout le body */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Forum Container */
+.forum-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Forum Header */
+.forum-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.forum-header h1 {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.forum-header p {
+    color: var(--light-text);
+}
+
+/* Forum Posts */
+.forum-posts {
+    margin-bottom: 2rem;
+}
+
+.forum-post {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.forum-post h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.forum-post p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.forum-post .reply-btn {
+    margin-top: 0.5rem;
+}
+
+/* New Post Section */
+.new-post {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.new-post h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.new-post form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.new-post label {
+    font-size: 0.9rem;
+    text-align: left;
+    color: var(--light-text);
+}
+
+.new-post input[type="text"],
+.new-post textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2C2C2E; /* Couleur du champ d'entrée */
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.new-post textarea {
+    resize: none; /* Désactive le redimensionnement de la zone de texte */
+}
+
+.new-post input::placeholder,
+.new-post textarea::placeholder {
+    color: #888; /* Couleur du placeholder */
+}
+
+.new-post .btn {
+    background-color: var(--accent-color); /* Bouton avec couleur d'accent */
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-post .btn:hover {
+    background-color: #74b9ff; /* Effet de survol */
+}

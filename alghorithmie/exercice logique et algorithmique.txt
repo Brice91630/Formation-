@@ -1,0 +1,62 @@
+exercice logique et algorithmique
+
+exercice 1:
+
+condition multiple:
+• Si la personne a 18 ans ou plus, elle peut venir.
+• Si elle est mineure et accompagnée d'un adulte, elle peut venir.
+• Sinon, elle ne peut pas participer.
+
+tableau (number, symbole, string)
+
+exercice 2:
+
+dictionnaire
+
+boucle for
+
+string, number
+
+exercice 3: 
+
+logique inductive: l'algorithme va analyser ce que regarde chaque client et lui proposer les fimls du même genre
+le client regarde avengers alors il lui propose iron man, sinon il lui propose oppenheimer.
+conduition alternative
+string 
+
+exercice 4:
+
+dictionnaire
+
+boucle for 
+
+syllogisme 
+si produit infèrieur a 5 réaprovisionne, si 0 retire de la vente 
+les stylos n'ont plus de stocks 
+les stylos sont retirer de la vente 
+
+exercice 5:
+
+boucle while
+string, number, string
+age en chiffre, nom avec une majuscule, email avec @
+
+exercice 6:
+
+file
+
+boucle for
+
+string, number, 
+
+exercice 7:
+
+logique inductive
+
+
+
+
+
+
+
+

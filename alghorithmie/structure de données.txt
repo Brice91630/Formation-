@@ -1,0 +1,78 @@
+structure de données
+
+
+listes chainées: Chaque élèment contient noeud avec une réference proche 
+exemple : file attente cinéma tu te lie à la personne devant et deriere toi, tu ne peux acceder à une personne que par rapport à la personne devant toi
+
+piles: premier element ajouté dernier retirer, implémenté à partir de tableau avec push et pop pour ajouter et retirer des élèments 
+exemple: pile assiettes 
+
+Files: FIFO ( first in first out) 
+exemple: 
+
+dictionnaires: stock des paires clé-valeur. accès rapide à une valeur  à partir de sa clé
+exemple: carnet d'adresse (nom =mail)
+
+ensembles: stock des élèment uniques, sans doublons 
+exemple: collection de cartes de visites
+
+Graphes: Représente des objets (noeud) 
+exemple: réseau de transport en commun 
+
+Arbres: structure hérarchique ou chaque noeud peut avoir plusiers enfants mais un seul parent (pyramide) élémentdu haut est la racine 
+exemple: arborescence d'un systeme 
+
+
+Exercice: 
+
+scénario 1: 
+
+Files
+
+scénario 2:
+
+;
+
+
+scénario 3:
+
+set (ensemble)
+
+scénario 4: 
+
+stack (piles)
+
+scénario 5:
+
+Dictionnaire 
+
+scénarios 6: gestions des stocks dans un entrepôts
+
+
+                                                      dictionnaire 
+
+
+            symbol                                       string                            number
+            symbol                                       string                            number
+
+
+
+
+Exercice: 
+
+- Panier de produit qu'on peut ajouer,supprimer ou  (dictionnare) 
+
+- liste amis snap (ensemble)
+
+- filtre de produit ( tableau et liste chainés)
+
+- recomandations netflix ( tableau et 
+
+- historique 
+
+Conseil pour l’exam :
+
+Il faut faire tout ce qui est demandé dans les cp même si ça marche pas il faut la théorie / documentation. 
+Pour le site il faut le minimum , un page front, supprimer , ajouter des choses en back et dans la base de donnée.
+Mème si on a fait une erreur il faut savoir écouter et argumenter / rebondir sur celle-ci.tableaux (arrays): sert a stocker et lister des objects par leur index 
+exemple liste de courses: chaque article rangée 

@@ -1,0 +1,332 @@
+/* Couleurs principales */
+:root {
+    --primary-color: #1C1C1E; /* Fond des sections */
+    --secondary-color: #2D3436; /* Couleur secondaire */
+    --accent-color: #0984E3; /* Accent bleu pour les boutons et liens */
+    --background-color: #121212; /* Fond sombre de la page */
+    --text-color: #ECECEC; /* Couleur principale du texte */
+    --light-text: #B2BEC3; /* Texte plus clair pour les sous-titres */
+}
+
+/* Reset des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style général pour le body */
+body {
+    background-color: var(--background-color); /* Fond sombre appliqué à tout le body */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Forum Container */
+.forum-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Forum Header */
+.forum-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.forum-header h1 {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.forum-header p {
+    color: var(--light-text);
+}
+
+/* Forum Posts */
+.forum-posts {
+    margin-bottom: 2rem;
+}
+
+.forum-post {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.forum-post h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.forum-post p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+/* Système de vote */
+.vote-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.upvote-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.vote-count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.upvote-btn:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+/* Affichage du nombre de réponses */
+.responses-container {
+    margin-top: 15px;
+}
+
+.responses-container button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.responses-container button:hover {
+    background-color: #74b9ff; /* Effet de survol */
+}
+
+.responses-container button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+/* New Post Section */
+.new-post {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.new-post h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.new-post form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.new-post label {
+    font-size: 0.9rem;
+    text-align: left;
+    color: var(--light-text);
+}
+
+.new-post input[type="text"],
+.new-post textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2C2C2E; /* Couleur du champ d'entrée */
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.new-post textarea {
+    resize: none; /* Désactive le redimensionnement de la zone de texte */
+}
+
+.new-post input::placeholder,
+.new-post textarea::placeholder {
+    color: #888; /* Couleur du placeholder */
+}
+
+.new-post .btn {
+    background-color: var(--accent-color); /* Bouton avec couleur d'accent */
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-post .btn:hover {
+    background-color: #74b9ff; /* Effet de survol */
+}
+
+/* Style du conteneur de votes */
+.vote-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #74b9ff;
+}
+
+footer .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-media ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer .social-media ul li a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Styles généraux */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation cachée par défaut pour petits écrans */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 60px; /* Ajustez selon la hauteur de votre en-tête */
+    right: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Afficher le menu lorsque la classe "open" est ajoutée */
+.nav-menu.open {
+    display: flex;
+}
+
+/* Bouton de menu (hamburger) */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Disposition par défaut pour les grands écrans */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none; /* Masquer le bouton sur les grands écrans */
+    }
+
+    .nav-menu {
+        display: flex; /* Afficher le menu sur les grands écrans */
+        position: static;
+        flex-direction: row;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+/* Styles spécifiques pour petits écrans (≤ 768px) */
+@media (max-width: 768px) {
+    header .container {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Styles pour les smartphones (≤ 480px) */
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .search-form input[type="text"] {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 50px 10px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer .social-media ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

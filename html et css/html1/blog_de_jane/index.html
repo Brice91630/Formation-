@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Blog</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="full-container navbar bg-black">
+        <div class="network-social">
+            <a href="#" class="icon-bar-network"><i class="fa fa-facebook-official"></i></a>
+            <a href="#" class="icon-bar-network"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="icon-bar-network"><i class="fa fa-snapchat"></i></a>
+            <a href="#" class="icon-bar-network"><i class="fa fa-flickr"></i></a>
+            <a href="#" class="icon-bar-network"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="icon-bar-network"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="search-bar">
+            <a href="#" class="icon-bar-network"><i class="fa fa-search"></i></a>
+        </div>
+    </nav>
+    
+    <header class="container">
+        <div class="title-header">
+            <h1>Jane Bloglife</h1>
+            <p class="mt-1"> Welcome to the blog of <span class="bg-black text-white p-1">Jane's world</span> </p>
+        </div>
+        <div class="image-header">
+            <span>Jane's</span>
+            <span>Fashion Blog</span>
+            <a class="btn-subscribe">Subscribe</a>
+        </div>
+    </header>
+    
+    <main class="content bg-gray">
+        <section class="posts">
+            <article class="post bg-white">
+                <div class="container">
+                    <div class="title-header">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, May 2, 2016</h5>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-image">
+                            <img src="/image/girl_hat.jpg">
+                        </div>
+                        <div class="post-description">
+                            <p>More Hats! I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+                                magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                             
+                        <div class="post-action">
+                          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                          <div class="button-container">
+                              <p class="left-align">
+                                  <button class="btn-like" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button>
+                              </p>
+                              <p class="right-align">
+                                  <button class="btn-replies" onclick="myReplies('demo1')"><b>Replies </b><span class="number-replies">1</span></button>
+                              </p>
+                          </div>
+                          <p class="clear"></p>
+                          <div class="reply-section margin-bottom" id="demo1" style="display:none">
+                              <hr>
+                              <div class="reply-avatar">
+                                  <img src="/image/avatar_smoke.jpg">
+                              </div>
+                              <div class="reply-content">
+                                  <h4>George May 3, 2015, 6:32 PM</h4>
+                                  <p>Great blog post! Following</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <hr>
+                </div>
+            </article>
+
+            <article class="post bg-white">
+                <div class="container">
+                    <div class="title-header">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, April 23, 2016</h5>
+                    </div>
+                    <div class="post">
+                      <div class="post-image">
+                        <img src="/image/man_hat.jpg">
+                        <p>Hats! The trend this summer is hats for men!</p>
+                        <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                            mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <p class="left-align"><button class="btn-like" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="right-align"><button class="btn-replies" onclick="myReplies('demo2')"><b>Replies  </b> <span class="number-replies">2</span></button></p>
+                        <p class="clear"></p>
+                    </div>
+                </div>
+                <div id="demo2" class="reply-section margin-bottom" style="display:none">
+                    <hr>
+                    <div class="reply-avatar">
+                        <img src="/image/avatar_smoke.jpg" >
+                    </div>
+                    <div class="reply-content">
+                        <h4>Amber April 26, 2015, 10:52 PM</span></h4>
+                        <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                    </div>
+                    <div class="reply-avatar">
+                        <img src="/image/avatar_smoke.jpg">
+                    </div>
+                    <div class="reply-content">
+                        <h4>Angie April 23, 2015, 9:12 PM</span></h4>
+                        <p>Love hats!!</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post bg-white">
+                <div class="container">
+                    <div class="title-header">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, April 7, 2016</h5>
+                    </div>
+                    <div class="post">
+                      <div class="post-image">
+                        <img src="/image/runway.jpg">
+                        <p>Dont miss! The runway in New York City this weekend is gonna be legendary!</p>
+                        <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                            mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <p class="left-align"><button class="btn-like" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="right-align"><button class="btn-replies" onclick="myReplies('demo3')"><b>Replies  </b> <span class="number-replies">3</span></button></p>
+                        <p class="clear"></p>
+                    </div>
+                </div>
+                <div id="demo3" class="reply-section margin-bottom" style="display:none">
+                    <hr>
+                    <div class="reply-avatar">
+                        <img src="/image/mountains9.jpg" >
+                    </div>
+                    <div class="reply-content">
+                        <h4>Jane April 10, 2015, 7:22 PM</h4>
+                        <p>That was a great runway show! Thanks for everything.</p>
+                    </div>
+                    <div class="reply-avatar">
+                        <img src="/image/avatar_smoke.jpg">
+                    </div>
+                    <div class="reply-content">
+                        <h4>John April 8, 2015, 10:32 PM</h4>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="reply-avatar">
+                        <img src="/image/avatar_smoke.jpg">
+                    </div>
+                    <div class="reply-content">
+                        <h4>Anja April 7, 2015, 9:12 PM</h4>
+                        <p>Cant wait for the runway to start!</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside class="sidebar">
+            <div class="post">
+                <!-- About Card -->
+                <div class="white-bg margin">
+                    <img src="/image/avatar_girl2.jpg" width="100%" alt="Avatar of the author">
+                    <div class="container-sidebar">
+                        <h4>My Name</h4>
+                        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest in lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+           <!-- Popular posts -->
+            <div class="sidebar-margin">
+                <div class="container-sidebar">
+                    <h4>Popular Posts</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                    <div class="img-popular">
+                        <img src="/image/avatar_smoke.jpg"> 
+                        <span class="subject">Denim</span>    
+                        <p> mattis nunc </p>  
+                      </div>
+                    <hr>
+                      <div class="img-popular">
+                        <img src="/image/bandmember.webp">  
+                        <span class="subject">Sweaters</span>                   
+                        <p> Praes tinci sed</p> 
+                      </div>
+                    <hr>
+                     <div class="img-popular">
+                        <img src="/image/workshop.jpg">
+                        <span class="subject">Workshop</span>
+                        <p> Ultricies congue</p> 
+                       </div>
+                    <hr>
+                      <div class="img-popular">
+                        <img src="/image/avatar_smoke.jpg">
+                        <span class="subject">Trends</span>
+                        <p> Lorem ipsum dipsum</p> 
+                      </div>
+                      </ul>
+            </div>
+            <hr>
+
+            <!-- Advertising -->
+            <div class="white-bg margin">
+                <div class="container-sidebar">
+                    <h4>Advertise</h4>
+                </div>
+                <div class="sidebar-margin">
+                    <div class="container-advertising">
+                      <div class="gray-box">
+                        <span class="ad-middle">Your AD Here</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Inspiration -->
+            <div class="sidebar-margin">
+                <div class="container-sidebar">
+                    <h4>Inspiration</h4>
+                </div>
+                <div class="container-inspiration">
+                    <div class="img-inspiration">
+                        <p><img src="/image/jeans.jpg"></p>
+                        <p><img src="/image/avatar_hat.jpg"></p>
+                    </div>
+                        <div class="img-inspiration">
+                        <p><img src="/image/team1.jpg"></p>
+                        <p><img src="/image/team4.jpg"></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Follow -->
+            <div class="sidebar-margin">
+                <div class="container-sidebar">
+                    <h4>Follow Me</h4>
+                </div>
+                <div class="container-follow">
+                    <i class="fa fa-facebook-official"></i>
+                    <i class="fa fa-instagram "></i>
+                    <i class="fa fa-snapchat "></i>
+                    <i class="fa fa-pinterest-p"></i>
+                    <i class="fa fa-twitter "></i>
+                    <i class="fa fa-linkedin "></i>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Subscribe -->
+            <div class="sidebar-margin">
+                <div class="container-sidebar">
+                    <h4>Subscribe</h4>
+                </div>
+                <div class="sidebar-margin">
+                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                    <p><input class="input border" type="text" placeholder="Enter e-mail" style="width:80%"></p>
+                    <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="button-suscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </aside>
+    </main>
+       
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <a href="#" class="btn-top"><i class="fa fa-arrow-up"></i>To the top</a>
+    </footer>
+
+    <script>
+        function likeFunction(x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "✓ Liked";
+        }
+
+        function myReplies(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

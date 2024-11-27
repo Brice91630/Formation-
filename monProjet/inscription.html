@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion & Inscription - Articles du Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <!-- Conteneur principal -->
+    <div class="auth-container">
+        <!-- Bouton retour (en dehors des boîtes) -->
+        <button onclick="window.history.back()" class="back-btn">Retour</button>
+
+        <!-- Section de Connexion -->
+        <section class="auth-box">
+            <h2>Connexion</h2>
+            <form action="accueil.html" method="get">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" required>
+
+                <label for="login-password">Mot de passe</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit" class="btn">Se connecter</button>
+                <p class="switch-text">Pas encore de compte ? <a href="#inscription" class="switch-link">S'inscrire</a></p>
+            </form>
+        </section>
+
+        <!-- Section d'Inscription -->
+        <section class="auth-box" id="inscription">
+            <h2>Inscription</h2>
+            <form action="acceuil.html" method="get">
+                <label for="register-name">Nom complet</label>
+                <input type="text" id="register-name" name="name" required>
+
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" required>
+
+                <label for="register-password">Mot de passe</label>
+                <input type="password" id="register-password" name="password" required>
+
+                <button type="submit" class="btn">S'inscrire</button>
+                <p class="switch-text">Déjà un compte ? <a href="#connexion" class="switch-link">Se connecter</a></p>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

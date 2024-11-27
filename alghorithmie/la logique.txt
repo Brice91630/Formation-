@@ -1,0 +1,52 @@
+logique inductive 
+exemple: j'ai remarqué que tous les matins ou je prend un ptit dej je me sens plus energique 
+conclusion déductive: je suis plus energique si je prend un ptit dej le matin 
+
+logique déductif
+règle général: si tu étudies régulièrement tu réussis tes examens 
+exemple: merie étudie pour son examen
+conclusion: marie à plus de chance de reussir son examen
+
+
+syllogisme: 
+règle: fait établi irréfutable 
+exemple: artiste tous yeux bleu 
+conclusion: john à des yeux bleu alors c'est un artiste 
+
+
+travail groupe: écologie et environnement 
+
+logique déductif 
+règle: le covoiturage permet de moins polluer.
+exemple: Anis et Gabin covoiture pour partir en voyage 
+conclusion: Anis et Gabin pollue moins car il covoiture 
+
+logique inductive
+règle: le réchauffement climatique est responsable de tous les évènement climatique 
+exemple: Il pleut aujourd'hui
+conclusion: donc c'est à cause du réchauffement climatique 
+
+syllogisme
+règle: Toute les voitures à essence pollu
+exemple: la clio 2 est une voiture à essence  
+cocnclusion: Donc la clio 2 pollue 
+
+
+
+syllogisme 
+- prémisse majeure
+- prémisse mineure 
+- conclusion
+
+logique déductive
+- règle générale
+- cas particulier
+- conclusion
+
+logique inductive
+- observation spécifique
+- conclusion inductive 
+
+
+
+

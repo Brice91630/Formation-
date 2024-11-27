@@ -1,0 +1,67 @@
+algorithmes de tri basiques 
+
+algo: une suite d'instructions pour une tache
+
+caractérique du bon algo: clarté,éfficacité et finitude
+
+
+
+le tri sert a organiser dans un certain ordre 
+
+le tri par selèction: cherche le plus petit et le place en premier puis repète pour le suivant
+ex: trier chaussure par taille 
+
+le tri par insertion: insérer chaque élément à sa place dans une liste déjà triée 
+ex: jeu de carte 
+
+le tri à bulles: comparer deux element si necesdaire le faire jusqu a la liste soit trier 
+ex: bulles trier par tailles
+
+le tri rapide: choisir element pivot dans liste divise liste en deux et classer selon pivot efficace pour grande liste
+ex: pile de livre à trier par ordre alphabétique (pour grande liste)
+
+
+le Typescript
+
+les variables 
+
+ce sont des conteneurs permettant de stocker des données 
+il existe dufférent type de variable(number, string...=
+les variable peuvent declare des mot clé ( const, var) let permet de declarer des variables qui peuvent etre modifié, const 
+mla porté des variabke=les en typescript depend de l'endroit ou elle sont mis
+il faut bien nommé les variables adin de rendre le code plus lisible 
+if si condition vrai, else if si verification necessaire, else utilisé en dernier recour
+operateur logique (et)='&&' et (ou)='||' 
+
+
+les boucles(for, while) 
+
+les boucles permette de repeter des instructions jusqu a qu une conditon soit rempli, cela reduit la duplication de code et rend les scripts plus efficaces
+boucle for utilise pour un code determine un certain nombre de fois, necessite une 
+boucle while execute dans que une certaine condition est vraie 
+les boucle peuvent etre imbrique pour un code plus complexe 
+bien preter attention au condition arret eviter boucle infinie qui peuvent bloquer l'éxecution du programme 
+
+
+implémentation des tris basiques 
+
+implémentation des tris basique en algorithmie comprend la combinaison de variable de conditions et de boucle 
+
+
+
+
+
+
+On souhaite une fonctionnalité qui fasse que lorsque mon panier parvienne à un certain montant j'ai une réduction sur ma commande ( faire au moins 3 palier) de plus si j'ajoute un code promo j'ai une reduction en plus le code doit se finir avec un chiffre qui définit le taux de la reduction. Ajouter une condition qui fasse qu'à une certaine periode j'ai une reduction. Si j'achète des produits similaire ça m'en revient moins chère.   
+
+Fait moi un tableau de gestion de stock sur des légumes qui soit automatisés et optimisé, me fesant par de l'offre et de la demande du marché, avec la localisation indiqué, les prix, les meilleurs marges à faire. En gros qui fait tout. 
+
+
+
+
+
+
+
+
+
+

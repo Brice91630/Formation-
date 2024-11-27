@@ -1,0 +1,458 @@
+/* styles.css */
+
+/* Couleurs principales */
+:root {
+    --primary-color: #1C1C1E;
+    --secondary-color: #121213;
+    --accent-color: #505f6b;
+    --background-color: #0f0f0f;
+    --text-color: #ECECEC;
+    --light-text: #B2BEC3;
+}
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.centered-image {
+    display: block;               
+    margin: 0 auto;               
+    width: 40%;                   
+    height: auto;
+    padding-bottom: 55px;         /* Ajoute un padding de 20px en bas de l'image */
+}
+
+
+/* Structure de base */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: black;
+    color: #ECECEC;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header h1 a {
+    color: var(--accent-color); /* Utilisation de la couleur d'accentuation */
+    text-decoration: none; /* Suppression du soulignement */
+}
+
+header h1 a:hover {
+    text-decoration: underline; /* Soulignement au survol pour indiquer l'interaction */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #ECECEC;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* profile  */
+.header-profil{
+    width: 150px;
+}
+
+.header-profil:hover {
+    color: #282c30;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: rgb(50, 59, 63);
+    min-width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-child a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+/* fonction de recherche */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
+
+
+
+/* Section Hero */
+.hero {
+    background-color: var(--secondary-color);
+    color: #ECECEC;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #B2BEC3;
+}
+
+/* Article */
+article {
+    padding: 3rem 1rem;
+    background-color: #1E1E20; /* Couleur légèrement plus claire que le footer */
+}
+
+article h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ECECEC;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+/* Section Commentaires */
+.comments-section {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.comments-section h3 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.comment {
+    background-color: #2C2C2E; /* Couleur de fond des commentaires */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.comment-header p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+.comment-body {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.comment-body p {
+    margin-top: 0.5rem;
+}
+
+.comment-form {
+    background-color: #2C2C2E;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.comment-form label {
+    font-size: 1rem;
+    color: var(--light-text);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.comment-form textarea,
+.comment-form input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #3C3C3E;
+    color: var(--text-color);
+}
+
+.comment-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.comment-form button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #74b9ff;
+}
+
+.comment-count {
+    font-size: 1.2rem;
+    color: var(--light-text);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #1A1A1C; /* Couleur légèrement plus sombre */
+    color: #ECECEC;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #B2BEC3;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer nav ul li {
+    margin-left: 1.5rem;
+}
+
+footer nav ul li a {
+    color: #B2BEC3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+/* Styles pour la section des réseaux sociaux */
+footer .social-media p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ECECEC;
+}
+
+footer .social-media ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media ul li {
+    margin-left: 1.5rem;
+}
+
+footer .social-media ul li a {
+    color: #B2BEC3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media ul li a:hover {
+    color: #fff;
+}
+
+
+/* Styles généraux */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation cachée par défaut pour petits écrans */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 60px; /* Ajustez selon la hauteur de votre en-tête */
+    right: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Afficher le menu lorsque la classe "open" est ajoutée */
+.nav-menu.open {
+    display: flex;
+}
+
+/* Bouton de menu (hamburger) */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Disposition par défaut pour les grands écrans */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none; /* Masquer le bouton sur les grands écrans */
+    }
+
+    .nav-menu {
+        display: flex; /* Afficher le menu sur les grands écrans */
+        position: static;
+        flex-direction: row;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+/* Styles spécifiques pour petits écrans (≤ 768px) */
+@media (max-width: 768px) {
+    header .container {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Styles pour les smartphones (≤ 480px) */
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .search-form input[type="text"] {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 50px 10px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer .social-media ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

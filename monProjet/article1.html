@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Article</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="article.css"> <!-- Lien vers ton fichier CSS -->
+</head>
+<body>
+
+<!-- En-tête -->
+<header>
+    <div class="container">
+        <h1>
+            <nav>
+                <ul>
+                    <a href="accueil.html">
+                        <img src="img/logoSpaceConnect.webp" width="60px" alt="Logo SpaceConnect">
+                    </a>
+                    <a href="accueil.html">SpaceConnect</a>
+                </ul>
+            </nav>
+        </h1> 
+        
+        <!-- Bouton pour les petits écrans -->
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Menu de navigation -->
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <form class="search-form" action="recherche.html" method="get">
+                        <input type="text" name="query" placeholder="Rechercher...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+                <li><a href="quizz.html">Quiz</a></li>
+                <li><a href="Support.html">Support</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li class="dropdown">
+                    <a href="#" class="header-profil"><i class="fa fa-user fa-lg"></i></a>
+                    <div class="dropdown-child">
+                        <a href="profile .html">Profile</a>
+                        <a href="inscription.html">Se connecter</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Attention!!! 1er alien filmée en vrai, vous allez être chokbar !!!</h2>
+    <p>Une introduction captivante à l'article...</p>
+</section>
+
+<article>
+    <div class="container">
+        <h2>Titre de l'Article</h2>
+        <p><strong>Auteur:</strong> Jean Dupont</p>
+        <p><strong>Date:</strong> 30 octobre 2024</p>
+        <img src="img/alientiktok.jpg" alt="Image d'article" class="centered-image">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <h3>Sous-titre</h3>
+        <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et viverra ante interdum sit amet. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+        <h3>Conclusion</h3>
+        <p>Phasellus libero justo, vulputate in ullamcorper in, aliquet in erat. Donec quis velit vel sem fermentum tincidunt a sed felis.</p>
+    </div>
+</article>
+
+<!-- Section des commentaires -->
+<section class="comments-section">
+    <h3>Commentaires</h3>
+
+    <!-- Affichage dynamique des commentaires -->
+    <div class="comment">
+        <div class="comment-header">
+            <p><strong>Utilisateur1</strong> - 30 octobre 2024</p>
+        </div>
+        <div class="comment-body">
+            <p>C'est un article vraiment intéressant! Je pense que l'idée des aliens est fascinante, mais il faudrait plus de détails sur les observations réelles...</p>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <p><strong>Utilisateur2</strong> - 31 octobre 2024</p>
+        </div>
+        <div class="comment-body">
+            <p>Je suis d'accord, c'est incroyable de voir cette vidéo. J'ai aussi vu quelque chose de similaire dans un autre article récemment.</p>
+        </div>
+    </div>
+
+    <!-- Formulaire de commentaire -->
+    <form class="comment-form">
+        <label for="comment-author">Nom</label>
+        <input type="text" id="comment-author" name="author" required placeholder="Votre nom">
+
+        <label for="comment-content">Commentaire</label>
+        <textarea id="comment-content" name="content" required placeholder="Écrivez votre commentaire..."></textarea>
+
+        <button type="submit">Publier</button>
+    </form>
+
+    <p class="comment-count">2 commentaires</p>
+</section>
+
+ <!-- Pied de page -->
+ <footer>
+    <div class="container">
+        <p>&copy; SpaceConnect. Tous droits réservés.</p>
+        <nav>
+            <ul>
+                <li><a href="mentionslegales.html">Mentions légales</a></li>
+                <li><a href="politique.html">Politique de confidentialité</a></li>
+                <li><a href="conditionUtilisation.html">Conditions d'utilisation</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <p>Suivez-nous sur nos réseaux :</p>
+            <ul>
+                <li><a href="https://www.facebook.com/?locale=fr_FR" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/?lang=fr" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/axel-jean-denis-681822213/?trk=opento_nprofile_details" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- Script pour le menu responsive -->
+<script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>

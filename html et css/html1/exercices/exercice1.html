@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice</title>
+    <style>
+        body {
+            background-color: rgb(202, 110, 110);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .center-block {
+            background-color: white;
+            width: 50%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 10px 5px 5px rgb(0, 0, 0);
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #073a0a;
+        }
+        .form-group2 button {
+            padding: 10px 20px;
+            background-color: #510bd1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group2 button:hover {
+            background-color: #150336;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .dropdown label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .dropdown-child {
+            display: none;
+            min-width: 200px;
+        }
+        .dropdown-child a {
+            color: rgb(0, 0, 2);
+        }
+        .dropdown:hover .dropdown-child {
+            display: block;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-block">
+        <h1>Contact Form</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, magnam eum adipisci quibusdam fugit, nulla nesciunt reiciendis ut beatae quas officia, nobis repellat enim maxime animi autem excepturi odit laborum?
+        <form action="exercice1.2.html" method="get">
+            <div class="form-group">
+                <label for="PRENOM">PRENOM</label>
+                <input type="text" id="PRENOM" name="PRENOM" placeholder="Votre PRENOM" required>
+                <label for="NOM">NOM</label>
+                <input type="text" id="NOM" name="NOM" placeholder="Votre NOM" required>
+            </div>
+            <div class="form-group">    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="support">Support</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="literature">Litterature</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <div class="form-group2">
+                    <button type="reset">Acceuil</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

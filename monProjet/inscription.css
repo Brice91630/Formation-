@@ -1,0 +1,137 @@
+/* Couleurs principales */
+:root {
+    --primary-color: #1C1C1E;
+    --secondary-color: #121213;
+    --accent-color: #505f6b;
+    --background-color: #0f0f0f;
+    --text-color: #ECECEC;
+    --light-text: #B2BEC3;
+}
+
+/* Reset des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style général pour le body */
+body {
+    background-color: var(--background-color); /* Fond sombre appliqué à tout le body */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Auth Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permet aux boîtes de se déplacer sur plusieurs lignes si nécessaire */
+    flex-direction: row; /* Disposition en ligne pour les boîtes */
+}
+
+/* Bouton retour */
+.back-btn {
+    position: absolute;
+    top: 10px; /* Placer le bouton près du haut de l'écran */
+    left: 10px;
+    padding: 10px 20px;
+    background-color: var(--accent-color); /* Couleur du bouton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #74b9ff; /* Couleur au survol */
+}
+
+/* Boîtes de connexion et d'inscription */
+.auth-box {
+    background-color: var(--primary-color); /* Fond de la boîte */
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color); /* Accent bleu pour les titres */
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-box label {
+    font-size: 0.9rem;
+    text-align: left;
+    color: var(--light-text); /* Texte des labels */
+}
+
+.auth-box input[type="email"],
+.auth-box input[type="password"],
+.auth-box input[type="text"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2C2C2E; /* Couleur du champ d'entrée */
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.auth-box input::placeholder {
+    color: #888; /* Couleur du placeholder */
+}
+
+.auth-box input:focus {
+    outline: 2px solid var(--accent-color); /* Couleur de surbrillance */
+}
+
+.auth-box .btn {
+    background-color: var(--accent-color); /* Bouton avec couleur d'accent */
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-box .btn:hover {
+    background-color: #74b9ff; /* Effet de survol */
+}
+
+.switch-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--light-text); /* Texte secondaire */
+}
+
+.switch-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.switch-link:hover {
+    color: #74b9ff;
+}

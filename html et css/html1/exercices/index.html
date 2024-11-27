@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la montagne</title>
+    <style>
+
+#header {
+    width: 100; 
+    height: 100;
+    border: 1px solid red;
+    text-align: center;
+    background-image: url("image/mountains9.jpg");
+ }
+
+ div {
+    border: 1px solid black;
+ }
+
+ img {
+    width: 100px;
+    height: 100px;
+ }
+
+ header h1 {
+    color: green;
+    font-size: 100px;
+ }
+
+ input{
+    width: 30px;
+ }
+    </style>
+</head>
+<body style="background-color: rgb(255, 0, 0);">
+    
+</body>
+<body>
+
+<ul>
+
+    <li>
+        <a href="file.pdf" target="_blank"> telecharge le cours</a>
+    </li>
+
+</ul>
+
+    <h1> un </h1> 
+    <h2> deux </h2>
+    <h3> trois </h3>
+    <h4> quatre </h4>
+    <h5> cinq </h5>
+    <b> coca bien frais chacal </b> <br>
+
+    <strong> axel </strong> <br>
+    <marquee> oui </marquee> <br>
+    <u> coca </u>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <h1> Les formulaires </h1>
+
+    <!-- 
+    Post get - (put delete path options)
+    enctype="multipart/form-data" pour autoriser les upload de fichier
+    -->
+
+    <form action="/create/user.php" methode="Post" enctype="multipart/form-data"> 
+
+        <label> Nom </label>
+        <input id="nom_id" type="text" name="nom" placeholder="Votre nom" value="john doe" required>
+
+    </form>
+
+    <img  title="une grosse montagne" src="image/mountains9.jpg" width="550" height="520" alt="mon image"/>
+    
+    <span> mon texte</span>
+
+    <a href="mon lien">lien</a>
+
+    <div> 
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur esse sequi assumenda officia aut? Cumque fuga numquam rerum non, modi tempore reprehenderit, repellat delectus officiis quibusdam ex molestiae officia. Repudiandae.
+    </div>
+    
+    <table border="5">
+        <thead>
+        </thead>
+        <tbody>
+            <tbody>
+            <tr> 
+                <td> 1 </td>
+                <td> 2 </td>
+                <td> 3 </td>             
+            </tr>
+        </tbody>
+        <tr>
+            <td colspan="3">2</td>
+        </tr>
+        <tr> 
+            <td> 1 </td>
+            <td> 2 </td>
+            <td> 3 </td>             
+        </tr>
+    </tbody>
+    </thead>
+    </table>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L3wKzyIN1yk?si=Q2akY-xigdoqQHiD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<video controls>
+    <source src="video/ma_video.mp4" types="video/mp4">
+</video>
+
+</body>
+
+</html>

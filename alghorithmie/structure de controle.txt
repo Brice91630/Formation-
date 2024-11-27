@@ -1,0 +1,172 @@
+structure sequentielle: executer ligne apres ligne 
+
+
+structure conditionelle: plusieurs sous catégories 
+
+
+condition simple: je conditionne à un seul paramètre 
+
+condition alterative: si la condition est fausse 
+
+condition multiple: permet de gerer plusieurs cas possible
+
+
+
+structure de sélèction: compare une variable à plusieurs valeurs et exécuté me bloc correspondant 
+ex: programme tv 
+
+cas a: serie a
+cas b: film b
+cas c: documentaire c
+
+si rien ne m'intéresse je lis un livre 
+la sélèction dépend d'une seule variable icic le jour de la semaine 
+
+
+
+
+structure répétitives: permettent de répéter l'exécution d'un bloc 
+
+boucle for: répète un bloc un certain nombre de fois 
+
+boucle while: repète un bloc tant qu'une condition est vraie 
+
+boucle do...while: la boucle s'exécute au moin une fois avant de vérifier la condition 
+
+boucle imbriquées: une boucle dans une boucle 
+
+
+Exercice: 
+Tant que j’ai pas le diplôme (While : Vrai/Faux ):
+    Si le jour est compris entre lundi et vendredi inclus :
+         Je viens en cours
+    Sinon :
+        Je ne vais pas en cours 
+    Est ce que j’ai le diplôme ? Boolean (Vrai/Faux)
+Fin de la boucle
+
+
+
+exemple en code if :
+
+let jour = "lundi";
+
+if (jour ==="lundi")
+{ 
+    console.log ("premier jour de la semaine"); 
+} else if(jour === "dimanche") { 
+    console.log("dernier jour de la semaine"); 
+} else { 
+    console.log("jour normal")
+} 
+
+version qui marche avec une variable en fonction du jour:
+const date = new Date();
+const jour = date.getUTCDay();
+console.log(jour);
+
+if(jour === 1){
+    console.log("premier jour de la semaine");
+}else if(jour === 6){
+    console.log("dernier jour de la semaine");
+}else{
+    console.log("jour de la semaine");
+}
+
+
+
+
+
+exemple switch:
+switch(jour) {
+    case "lundi":
+    console.log("premier jour de la semaine");
+    break;
+    case "dimanche":
+        console.log("dernier jour de la semaine");
+        break;
+    default : 
+     console.log("jour normal")
+}
+
+exemple en code boucle for:
+
+for( let i=1; i<=5; i++){
+    console.log(i);
+}
+
+exemple en code boucle while:
+
+let i=1;
+while(i<=5){
+    console.log(i);
+    i++;
+}
+
+exemple en code boucle do...while:
+
+let i=1;
+do{
+    console.log(i);
+    i++;
+}while(i<=5); 
+
+
+
+Exercice: //Dans un contexte de 1,2,3 Soleil
+let i = 0;
+
+while(i<=3){
+    console.log("je me retourne pas");
+    i++
+}
+console.log("Soleil");
+console.log("je me retourne");
+
+
+
+
+exercice 2:
+
+let km i=0;
+
+ if (i<=5km){
+           console.log("prendre le vélo");
+}
+ else if  (i>=5km){
+           console.log("prendre la voiture");
+}
+
+
+
+
+exercice 6: 
+
+
+let sol = "sec";
+
+while( sol === "sec")
+{
+	if (sol ==="sec")
+	{ 
+    		console.log ("arroser"); 
+		sol="humide"
+	} if (sol=== "humide") { 
+    		console.log("arreter d'arroser"); 
+	} 
+}
+
+
+
+exercice 11:
+
+
+
+
+
+
+
+
+
+
+
